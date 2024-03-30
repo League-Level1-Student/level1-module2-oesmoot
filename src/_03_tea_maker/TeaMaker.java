@@ -7,7 +7,11 @@ package _03_tea_maker;
 public class TeaMaker {
 public static void main(String[] args) {
 	TeaBag bagOTea = new TeaBag("mint");
-	getWater();
+	Kettle ketal = new Kettle();
+	ketal.getWater();
+	ketal.boil();
+	Cup gup = new Cup();
+	gup.makeTea(bagOTea, ketal.getWater());
 }
 }
 
